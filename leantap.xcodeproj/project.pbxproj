@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FED88F0F85070C7466C9D2E /* Pods_leantap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E0FFABB23B0FE946E2CC5F /* Pods_leantap.framework */; };
 		86876F2D2A730449006A4D0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86876F2C2A730449006A4D0A /* AppDelegate.swift */; };
 		86876F2F2A730449006A4D0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86876F2E2A730449006A4D0A /* SceneDelegate.swift */; };
 		86876F312A730449006A4D0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86876F302A730449006A4D0A /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10E0FFABB23B0FE946E2CC5F /* Pods_leantap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_leantap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86876F292A730449006A4D0A /* leantap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = leantap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86876F2C2A730449006A4D0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86876F2E2A730449006A4D0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		86876F492A73044B006A4D0A /* leantapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = leantapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86876F4D2A73044B006A4D0A /* leantapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leantapUITests.swift; sourceTree = "<group>"; };
 		86876F4F2A73044B006A4D0A /* leantapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leantapUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9B1641AD4B25D1D685D015E7 /* Pods-leantap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-leantap.release.xcconfig"; path = "Target Support Files/Pods-leantap/Pods-leantap.release.xcconfig"; sourceTree = "<group>"; };
+		F7C5E4D3D41FC9C2E694B8DB /* Pods-leantap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-leantap.debug.xcconfig"; path = "Target Support Files/Pods-leantap/Pods-leantap.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FED88F0F85070C7466C9D2E /* Pods_leantap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,8 @@
 				86876F422A73044B006A4D0A /* leantapTests */,
 				86876F4C2A73044B006A4D0A /* leantapUITests */,
 				86876F2A2A730449006A4D0A /* Products */,
+				A73C52DFB053F316481AEB7B /* Pods */,
+				AB18E9BE579AE82808C2DF22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +134,24 @@
 			path = leantapUITests;
 			sourceTree = "<group>";
 		};
+		A73C52DFB053F316481AEB7B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7C5E4D3D41FC9C2E694B8DB /* Pods-leantap.debug.xcconfig */,
+				9B1641AD4B25D1D685D015E7 /* Pods-leantap.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AB18E9BE579AE82808C2DF22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10E0FFABB23B0FE946E2CC5F /* Pods_leantap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86876F532A73044B006A4D0A /* Build configuration list for PBXNativeTarget "leantap" */;
 			buildPhases = (
+				D33EA3A145FBEAC1D1054A82 /* [CP] Check Pods Manifest.lock */,
 				86876F252A730449006A4D0A /* Sources */,
 				86876F262A730449006A4D0A /* Frameworks */,
 				86876F272A730449006A4D0A /* Resources */,
+				109DAAFAF01A15911456F312 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +279,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		109DAAFAF01A15911456F312 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-leantap/Pods-leantap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-leantap/Pods-leantap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-leantap/Pods-leantap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D33EA3A145FBEAC1D1054A82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-leantap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		86876F252A730449006A4D0A /* Sources */ = {
@@ -432,6 +501,7 @@
 		};
 		86876F542A73044B006A4D0A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7C5E4D3D41FC9C2E694B8DB /* Pods-leantap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -459,6 +529,7 @@
 		};
 		86876F552A73044B006A4D0A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B1641AD4B25D1D685D015E7 /* Pods-leantap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

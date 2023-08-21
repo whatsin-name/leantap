@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-leantap/Pods-leantap-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Leanplum-iOS-Location/LeanplumLocation.framework
+${BUILT_PRODUCTS_DIR}/Leanplum-iOS-SDK/Leanplum.framework
